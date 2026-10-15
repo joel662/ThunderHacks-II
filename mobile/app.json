@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "311.2Brampton",
+    "slug": "brampton311",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "scheme": "brampton311",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "backgroundColor": "#1a1a2e"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.brampton311.app",
+      "config": {
+        "googleMapsApiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1a1a2e"
+      },
+      "package": "com.brampton311.app",
+      "config": {
+        "googleMaps": {
+          "apiKey": "YOUR_GOOGLE_MAPS_API_KEY"
+        }
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "311.2Brampton needs your location to show nearby reports."
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "311.2Brampton needs access to your photos to attach to reports.",
+          "cameraPermission": "311.2Brampton needs access to your camera to take photos for reports."
+        }
+      ],
+      "expo-font"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
