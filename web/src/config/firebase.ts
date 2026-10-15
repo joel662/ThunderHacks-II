@@ -4,13 +4,13 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-  apiKey: 'AIzaSyCAy64mUxkBO5KGcBX73tRlPDeR85jteKs',
-  authDomain: 'brampton-bbd49.firebaseapp.com',
-  projectId: 'brampton-bbd49',
-  storageBucket: 'brampton-bbd49.firebasestorage.app',
-  messagingSenderId: '247094682985',
-  appId: '1:247094682985:web:be7038ca8e8df0488749f8',
-  measurementId: 'G-7WV77P3G63',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
