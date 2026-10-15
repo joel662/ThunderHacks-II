@@ -9,15 +9,15 @@ interface ThemeState {
 }
 
 const ThemeContext = createContext<ThemeState>({
-  theme: 'dark',
-  isDark: true,
+  theme: 'light',
+  isDark: false,
   toggleTheme: () => {},
 });
 
 function getInitialTheme(): Theme {
   const stored = localStorage.getItem('311brampton-theme');
   if (stored === 'light' || stored === 'dark') return stored;
-  return 'dark';
+  return 'light';
 }
 
 export function ThemeProvider({ children }: { children: ReactNode }) {
