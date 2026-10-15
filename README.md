@@ -20,6 +20,50 @@ Built for **ThunderHacks II**.
 - Status updates (Open → In Progress → Resolved) with required comments and optional image attachments
 - Light/dark mode
 
+## User Flow
+
+### Resident (Mobile App)
+
+```
+Sign Up / Log In
+       ↓
+   Home Feed ← Browse reports, upvote, comment
+       ↓
+  Tap "+" to Report
+       ↓
+  Select Category (pothole, streetlight, graffiti, etc.)
+       ↓
+  Take Photo / Video → Auto-detect GPS location
+       ↓
+  Add Title & Description → Submit
+       ↓
+  Report appears on Map & Feed
+       ↓
+  Community upvotes & comments push it higher
+       ↓
+  Receive status updates (In Progress → Resolved)
+```
+
+### City Official / Mayor (Web Dashboard)
+
+```
+Log In (admin credentials)
+       ↓
+  Dashboard Overview → See stats, charts, category breakdown
+       ↓
+  Browse Reports → Filter by category, status, date, upvotes
+       ↓
+  Click Report → View details, media, location, comments
+       ↓
+  Change Status to "In Progress"
+       ↓
+  Leave a comment explaining the action + optional image
+       ↓
+  Comment appears as pinned status update for residents
+       ↓
+  Mark as "Resolved" with a closing comment when fixed
+```
+
 ## Tech Stack
 
 | Layer | Technology |
